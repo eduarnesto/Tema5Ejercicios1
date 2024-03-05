@@ -34,10 +34,10 @@ public class Libro {
 		boolean devuelto=false;
 		
 		if (this.ejemplaresPrestados>0) {
-			prestado=true;
-			this.ejemplaresPrestados++;
+			devuelto=true;
+			this.ejemplaresPrestados--;
 		}
 		
-		return prestado;
+		return devuelto;
 	}
 }
